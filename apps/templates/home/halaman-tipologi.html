@@ -1,0 +1,95 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Google Maps {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+<!-- [ Main Content ] start -->
+<div class="pcoded-main-container">
+    <div class="pcoded-content">
+        <!-- [ Main Content ] start -->
+        <div class="offset-lg-3">
+            <a href="/halaman-rekomendasi.html"><button type="button" class="btn btn-tipologi" data-toggle="tooltip">Cek rekomendasi</button></a>
+            <a href="/halaman-detail-tipologi.html"><button type="button" class="btn btn-tipologi" data-toggle="tooltip">Detail Tipologi</button></a>
+        </div>
+
+        <div class="row">  
+            
+           
+            <!-- order-card start -->
+            <div class="col-md-6 col-xl-4">
+                <div class="card bg-c-blue order-card">
+                    <div class="card-body">
+                        <h6 class="text-white">Jumlah Transaksi</h6>
+                        <h2 class="text-end text-white"><i class="feather icon-shopping-cart float-start"></i><span>xx</span></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-4">
+                <div class="card bg-c-green order-card">
+                    <div class="card-body">
+                        <h6 class="text-white">Jumlah Pelanggan</h6>
+                        <h2 class="text-end text-white"><i class="feather icon-tag float-start"></i><span>xx</span>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-4">
+                <div class="card bg-c-yellow order-card">
+                    <div class="card-body">
+                        <h6 class="text-white">Total Pendapatan</h6>
+                        <h2 class="text-end text-white"><i
+                                class="feather icon-repeat float-start"></i><span>xx</span></h2>
+                    </div>
+                </div>
+            </div>
+            <!-- order-card end -->
+
+        <!-- Dashboard start -->
+        <div class="col-md-6 col-x1-12">
+            <div class="card">
+                <div class="card-header">
+                    <h5>Map Chart Cluster</h5>
+            </div>
+                    <div id="map-chart" style="height: 500px;"class="ag-theme-alpine-dark"></div> <!--Javascript chart map-->
+            </div>
+        </div>
+
+        <div class="col-md-6 col-x1-12">
+            <div class="card">
+                <div class="card-header">
+                    <h5>Cluter Pie Chart</h5>
+            </div>
+                    <div id="map-chart" style="height: 500px;"class="ag-theme-alpine-dark"></div> <!--Javascript chart map-->
+            </div>
+        </div>
+
+        <div class="col-md-12 col-x1-12">
+            <div class="card">
+                <div class="card-header">
+                    <h5>Customer Lifetime Value</h5>
+            </div>
+                    <div id="map-chart" style="height: 250px;"class="ag-theme-alpine-dark"></div> <!--Javascript chart map-->
+            </div>
+        </div>
+
+        <!-- Dashboard End -->
+
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}
+    <!--Plugins -->
+    <script src="/static/assets/js/vendor-all.min.js"></script>
+    <script src="/static/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/static/assets/js/pcoded.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.3.2/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <!--Specific Chart-->
+
+{% endblock javascripts %}

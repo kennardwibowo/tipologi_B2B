@@ -3327,9 +3327,9 @@ textarea.form-control-lg {
     user-select: none;
     background-color: transparent;
     border: 1px solid transparent;
-    padding: 0.375rem 0.95rem;
+    padding: 10px 30px;
     font-size: 0.875rem;
-    border-radius: 2px;
+    border-radius: 1px;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
@@ -3359,6 +3359,14 @@ textarea.form-control-lg {
     color: #fff;
     background-color: #4099ff;
     border-color: #4099ff;
+}
+
+.btn-tipologi {
+    padding: 10px 10%;
+    margin: 20px 10px;
+    border-radius: 20px;
+    color: #fff;
+    background-color: #005a66;
 }
 
 .btn-primary:hover {
@@ -29409,3 +29417,20 @@ div.dtk-focus-alt table.dataTable tbody th.focus {
 }
 
 /**====== Icon layouts css end ======**/
+
+/**===Layouting page===**/
+
+/* Left column */
+.leftcolumn {   
+    float: left;
+    width: 50%;
+  }
+  
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 50%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+  }
+  
