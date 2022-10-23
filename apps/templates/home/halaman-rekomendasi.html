@@ -6,11 +6,93 @@
 {% block stylesheets %}{% endblock stylesheets %}
 
 {% block content %}
+<!-- [ Main Content ] start -->
+<div class="pcoded-main-container">
+    <div class="pcoded-content">
+        <a href="/halaman-tipologi.html"><button type="button" class="btn btn-secondary" data-toggle="tooltip" ><span class="feather icon-arrow-left" > </span>  Kembali ke Tipologi</button></a>
+
+        <div class="row" style="margin:10px;">  
+            
+           
+            <!-- order-card start -->
+            <div class="col-md-6 col-xl-4" >
+                <div class="card bg-c-blue order-card">
+                    <div class="card-body">
+                        <h6 class="text-white">Recency</h6>
+                        <h2 class="text-end text-white"><i class="feather icon-shopping-cart float-start"></i><span>xx</span></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-4">
+                <div class="card bg-c-green order-card">
+                    <div class="card-body">
+                        <h6 class="text-white">Frequency</h6>
+                        <h2 class="text-end text-white"><i class="feather icon-tag float-start"></i><span>xx</span>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-4">
+                <div class="card bg-c-yellow order-card">
+                    <div class="card-body">
+                        <h6 class="text-white">Monetary</h6>
+                        <h2 class="text-end text-white"><i
+                                class="feather icon-repeat float-start"></i><span>xx</span></h2>
+                    </div>
+                </div>
+            </div>
+            <!-- order-card end -->
+
+        <!-- Dashboard start -->
+        <div class="col-md-6 col-x1-12">
+            <div class="card">
+                <div class="card-header">
+                    <h5>Cluster Regional</h5>
+                </div>
+                <div id="map-chart" style="height: 300px;"class="ag-theme-alpine-dark"></div> <!--Javascript chart map-->
+            </div>
+        </div>
+        <div class="col-md-6 col-x1-12">
+            <div class="card">
+                <div class="card-header">
+                    <h5>Cluster Pelanggan</h5>
+                </div>
+                <div id="map-chart" style="height: 300px;"class="ag-theme-alpine-dark"></div> <!--Javascript chart map-->
+            </div>
+        </div>
+        <div class="col-md-12 col-x1-12">
+            <div class="card">
+                <div class="card-header">
+                    <h5>Grafik CLV</h5>
+            </div>
+                    <div id="map-chart" style="height: 300px;"class="ag-theme-alpine-dark"></div> <!--Javascript chart map-->
+            </div>
+        </div>
+
+        <div class="col-md-12 col-x1-12">
+            <div class="card">
+                <div class="card-header">
+                    <h5>Rekomendasi Strategi</h5>
+            </div>
+                    <div id="map-chart" style="height: 100px;"class="ag-theme-alpine-dark"></div> <!--Javascript chart map-->
+            </div>
+        </div>
+
+        <!-- Dashboard End -->
 
 
 {% endblock content %}
 
 <!-- Specific Page JS goes HERE  -->
 {% block javascripts %}
+    <!--Plugins -->
+    <script src="/static/assets/js/vendor-all.min.js"></script>
+    <script src="/static/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/static/assets/js/pcoded.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.3.2/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <!--Specific Chart-->
 
 {% endblock javascripts %}
+

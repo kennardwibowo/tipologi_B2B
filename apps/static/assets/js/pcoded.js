@@ -358,3 +358,8 @@ var slideToggle = (target, duration = 0) => {
         return slideUp(target, duration);
     }
 }
+
+//halaman data
+$(document).ready(function () {
+    $('#example').DataTable();
+});
